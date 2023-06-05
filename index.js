@@ -2,18 +2,11 @@ const titleInput = document.querySelector('#title');
 const authorInput = document.querySelector('#author');
 const form = document.querySelector('#form-book');
 import { pDate, list, addNew, contact, booksSection, formSection, contactSection, showForm, showContact, showBooks } from './modules/menu.js';
+import { DateTime } from './modules/Luxon.js';
 
-const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
-const date = new Date();
-
-const month = months[date.getMonth()];
-const day = date.getDate();
-const year = date.getFullYear();
-let hours = date.getHours();
-const minutes = date.getMinutes();
-const seconds = date.getSeconds();
-const period = hours >= 12 ? 'pm' : 'am';
+const fullDate = document.querySelector('#date');
+const date = DateTime.now();
+fullDate.innerHTML = date.toLocaleString(DateTime.DATETIME_MED);
 
 // Rest of the code...
 
