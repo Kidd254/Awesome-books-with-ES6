@@ -1,3 +1,8 @@
+const titleInput = document.querySelector('#title');
+const authorInput = document.querySelector('#author');
+export const form = document.querySelector('#form-book');
+import Books from './books.js';
+export const books = new Books();
 export function addBook(event) {
   // If the inputs have values, then the form is submitted
   if (!titleInput.validity.valueMissing && !authorInput.validity.valueMissing) {
