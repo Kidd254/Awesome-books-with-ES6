@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+/* eslint-disable no-shadow */
 /* eslint-disable no-continue */
 /* eslint-disable brace-style */
 /* eslint-disable guard-for-in */

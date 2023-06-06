@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import Books from './books.js';
 
 const titleInput = document.querySelector('#title');
