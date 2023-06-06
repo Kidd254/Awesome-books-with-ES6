@@ -29,7 +29,7 @@ export function showContact() {
 }
 
 export function showBooks() {
-   booksSection.classList.remove('hide');
+  booksSection.classList.remove('hide');
   formSection.classList.add('hide');
   contactSection.classList.add('hide');
 
