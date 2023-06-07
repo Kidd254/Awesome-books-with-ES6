@@ -7,8 +7,7 @@ export const formSection = document.querySelector('#add-new-book');
 export const contactSection = document.querySelector('#contact');
 
 // Rest of the code...
-
-export function showForm() {
+export const showForm = () => {
   booksSection.classList.add('hide');
   formSection.classList.remove('hide');
   contactSection.classList.add('hide');
@@ -16,9 +15,9 @@ export function showForm() {
   list.classList.remove('change-color');
   contact.classList.remove('change-color');
   addNew.classList.add('change-color');
-}
+};
 
-export function showContact() {
+export const showContact = () => {
   booksSection.classList.add('hide');
   formSection.classList.add('hide');
   contactSection.classList.remove('hide');
@@ -26,9 +25,9 @@ export function showContact() {
   list.classList.remove('change-color');
   addNew.classList.remove('change-color');
   contact.classList.add('change-color');
-}
+};
 
-export function showBooks() {
+export const showBooks = () => {
   booksSection.classList.remove('hide');
   formSection.classList.add('hide');
   contactSection.classList.add('hide');
@@ -36,4 +35,4 @@ export function showBooks() {
   addNew.classList.remove('change-color');
   contact.classList.remove('change-color');
   list.classList.add('change-color');
-}
+};
